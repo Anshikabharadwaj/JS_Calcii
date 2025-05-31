@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <!-- <link rel="stylesheet" href="task4.css"> -->
+    <link rel="stylesheet" href="calci.css" />
+    <style></style>
+  </head>
+
+  <body>
+    <div class="calculator">
+      <h1>Calculator</h1>
+      <input type="text" placeholder="0" id="inp" />
+      <div>
+        <button id="akku" onclick="clearScreen()">AC</button>
+        <button id="akku" onclick="result()">=</button>
+        <button id="akku" value="%" onclick="appendvalue('%')">%</button>
+        <button id="akku" value="/" onclick="appendvalue('/')">/</button>
+      </div>
+      <div>
+        <button id="akku" value="7" onclick="appendvalue('7')">7</button>
+        <button id="akku" value="8" onclick="appendvalue('8')">8</button>
+        <button id="akku" value="9" onclick="appendvalue('9')">9</button>
+        <button id="akku" value="" onclick="appendvalue('')">*</button>
+      </div>
+      <div>
+        <button id="akku" value="4" onclick="appendvalue('4')">4</button>
+        <button id="akku" value="5" onclick="appendvalue('5')">5</button>
+        <button id="akku" value="6" onclick="appendvalue('6')">6</button>
+        <button id="akku" value="-" onclick="appendvalue('-')">-</button>
+      </div>
+      <div>
+        <button id="akku" value="1" onclick="appendvalue('1')">1</button>
+        <button id="akku" value="2" onclick="appendvalue('2')">2</button>
+        <button id="akku" value="3" onclick="appendvalue('3')">3</button>
+        <button id="akku" value="+" onclick="appendvalue('+')">+</button>
+      </div>
+      <div>
+        <button id="akku" value="00" onclick="appendvalue('00')">00</button>
+        <button id="akku" value="0" onclick="appendvalue('0')">0</button>
+        <button id="akku" id="fact" onclick="fact()">fact</button>
+      </div>
+      <div>
+          <button id="akku" id="squre" onclick="squre()">sq</button>
+          <button id="akku" id="cube" onclick="cube()">cq</button>
+        </div>
+    </div>
+
+    <script src="calci.js"></script>
+  </body>
+</html>
